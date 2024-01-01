@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: repeat(3,250px);
+            grid-template-columns: repeat(3,3fr);
+            gap: 20px;
+            padding: 20px;
+            height: 100vh;
+            
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+        }       
+    
+        .image1{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .image2{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .image3{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .image4{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .image5{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .image6{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image1">
+            <img src="https://randomwordgenerator.com/img/picture-generator/52e8d4414e51a814f1dc8460962e33791c3ad6e04e50744074267bd69f49c4_640.jpg" alt="">
+        </div>
+        <div class="image2">
+            <img src="https://randomwordgenerator.com/img/picture-generator/55e1d6464b57ac14f1dc8460962e33791c3ad6e04e507440722d72d5924ec7_640.jpg" alt="">
+        </div>
+        <div class="image3">
+            <img src="https://randomwordgenerator.com/img/picture-generator/54e9d1474354a814f1dc8460962e33791c3ad6e04e50744172297cdc9e4fc4_640.jpg" alt="">
+        </div>
+        <div class="image4">
+            <img src="https://randomwordgenerator.com/img/picture-generator/57e7d54b4a5ba814f1dc8460962e33791c3ad6e04e5074417c2e7dd3974ec4_640.jpg" alt="">
+        </div>
+        <div class="image5">
+            <img src="https://randomwordgenerator.com/img/picture-generator/53e4d2464252ae14f1dc8460962e33791c3ad6e04e507440722d72d59448c5_640.jpg" alt="">
+        </div>
+        <div class="image6">
+            <img src="https://randomwordgenerator.com/img/picture-generator/55e9dc454355a914f1dc8460962e33791c3ad6e04e5074417c2f7dd59545c1_640.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+In a grid layout (like a table), you can set specific rows and columns for your items. However, sometimes you might not know how many items there will be or where they will go. 
+That's where grid-auto-rows and grid-auto-columns come in.
+
+grid-auto-rows: Imagine you have rows in your grid, but you're not sure how many there will be. 
+                grid-auto-rows lets you decide how tall these unknown rows should be.
+
+    Example
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-auto-rows: 50px; /* Unknown rows will be 50 pixels tall */
+        }
+
+grid-auto-columns: Similarly, if you have columns in your grid but don't know how many, grid-auto-columns lets you set the width of these unknown columns.
+
+    Example
+        .container {
+            display: grid;
+            grid-template-rows: 100px 100px;
+            grid-auto-columns: 50px; /* Unknown columns will be 50 pixels wide */
+        }
+
+These properties help you handle items that aren't explicitly placed, giving them default sizes for rows and columns. It's like saying, "If I haven't specified where something goes, make sure it fits in a row/column of this size."
